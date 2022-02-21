@@ -7,7 +7,7 @@ body{
 	background: #fafafa;
 	color:  #102;
 	font-family: 'Josefin Slab', serif;
-	font-size: 5vh;
+	font-size: 4.5vh;
 }
 .contenedor{
 	display: block;
@@ -24,8 +24,8 @@ body{
 	flex-direction: column;
 }
 h1{
-	margin: 15px;
-	font-size: 10vh;
+	margin: 15px auto;
+	font-size: 8vh;
 }
 h2{
 	margin: 15px auto;
@@ -70,7 +70,6 @@ h2{
 .label{
 	transform-origin: bottom right;
 	transform:rotate(90deg);
-	margin-left: -15vh;
 }
 img {
 	max-width: 100%;
