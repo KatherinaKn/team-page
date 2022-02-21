@@ -1,6 +1,7 @@
 *{
 	padding: 0;
-	margin: 0;
+	margin: 0;	
+	box-sizing: content-box;
 }
 body{	
 	background: #fafafa;
@@ -28,14 +29,15 @@ h1{
 }
 h2{
 	margin: 15px auto;
-	font-size: 6vh;
+	font-size: 5vh;
 }
 .img-section{
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	grid-template-rows: repeat(7, auto);
-	grid-gap: 5vh;
-	font-size: 16px;
+	padding: 0 3vh;
+	grid-gap: 4vh;
+	font-size: 2.5vh;
 }
 .box-img:first-child{
 	grid-column: 1/2;
@@ -66,37 +68,50 @@ h2{
 	flex-direction: column;
 }
 .label{
-	width: auto;
 	transform-origin: bottom right;
 	transform:rotate(90deg);
+	margin-left: -15vh;
 }
 img {
 	max-width: 100%;
 }
-/*
-.profession{
-	position: absolute;
-	transform: rotate(90deg);
-	margin: 0;
-}*/
 
 
 footer{
 	margin-top: 20vh;
+	margin-bottom: 5vh;
 	display: flex;
 	text-align: center;
 	justify-content: center;
 	font-family: monospace;
-	font-size: 2.5vh;
-	color: #002;
+	font-size: 1.5vh;
+	color: #147;
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 768px) {
+	h1{
+		font-size: 8vh;
+	}
+	h2{
+		font-size: 6vh;
+	}
+	.text{
+		font-size: 4vh;
+	}
+	.img-section{
+		padding: 3vh 7vh;
+	}
+	.label{
+		margin-left: -12vh;
+	}
+
+}
+@media screen and (min-width: 950px){
 	.top{
 		display: flex;
 		justify-content: space-between;
 	}
+
 	h2{
-		text-align: right;
 		font-size: 7vh;
 		margin: 20px 0;
 	}
@@ -104,6 +119,7 @@ footer{
 		text-align: right;
 	}
 	.img-section{
+		padding: 3vh 10vh;
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
 	}
@@ -132,5 +148,16 @@ footer{
 		grid-column: 3/4;
 		grid-row: 4/7;
 	}
+	.box{
+		margin-right: 4vh;
+	}
+	.label{
+		margin-left: 0;
+	}
 
+}
+@media screen and (min-width: 1400px){
+	.img-section{
+		padding: 4vh 15vh;
+	}
 }
